@@ -1,0 +1,101 @@
+body{
+    background: #0e83cd;
+    text-align: center;
+}
+.conatinerPage{
+    max-width: 1200px;margin:auto;
+}
+.numbersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.numbersContainer div {
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    border-color: rgb(255, 0, 0);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffd105;
+    font-size: 1.3rem
+}
+button {
+    display: block;
+    margin: 0 auto;
+}
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+.btn-1a:hover, .btn-1a:active {
+    color: #0e83cd;
+    background: #fff;
+}
+/*loader*/
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    animation: spin 2s linear infinite;
+    margin:auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*loader*/
+.selectedNumber
+{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid white;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selectedNumberActive{
+    background-color: #222222;
+    color: white;
+    border: 3px solid red;
+}
+.selectedNumber:hover
+{
+    background-color: #222222;
+    color: white;
+    border: 3px solid red;
+}
+.findedNumber{
+    color:red;border: 5px solid red
+}
+
+.numberOfHits{
+    font-size: 60px
+}
